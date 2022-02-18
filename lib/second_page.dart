@@ -11,7 +11,7 @@ class SecondPage extends StatelessWidget {
         elevation: 0,
         backgroundColor: const Color(0xFF3C3E52),
       ),
-      body: Center(
+      body: const Center(
           child: Text(
         'Sucess',
         textAlign: TextAlign.center,

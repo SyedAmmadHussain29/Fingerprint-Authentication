@@ -1,5 +1,7 @@
 // import 'dart:html';
 
+// ignore_for_file: unused_field, avoid_print
+
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:local_auth/local_auth.dart';
@@ -71,7 +73,7 @@ class _HomePageState extends State<HomePage> {
         auth = authenticate ? 'Authorize Success' : 'Failed to Authenticate';
         if (authenticate) {
           Navigator.push(
-              context, MaterialPageRoute(builder: (_) => SecondPage()));
+              context, MaterialPageRoute(builder: (_) => const SecondPage()));
         }
         print(auth);
       });
@@ -86,9 +88,9 @@ class _HomePageState extends State<HomePage> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 const Center(
-                  child: const Text(
+                  child: Text(
                     'Login',
-                    style: const TextStyle(
+                    style: TextStyle(
                         color: Colors.white,
                         fontSize: 48,
                         fontWeight: FontWeight.bold),
@@ -100,7 +102,7 @@ class _HomePageState extends State<HomePage> {
                     children: [
                       const Text(
                         'Fingerprint Auth',
-                        style: const TextStyle(
+                        style: TextStyle(
                             color: Colors.white,
                             fontSize: 22,
                             fontWeight: FontWeight.bold),
